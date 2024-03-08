@@ -23,7 +23,7 @@
     trigger="present-alert"
     header="Project"
     message="Coming Soon..."
-    :buttons="['รับทราบ']"
+    :buttons="['Aceptar']"
   ></ion-alert>
 </template>
 
