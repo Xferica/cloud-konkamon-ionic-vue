@@ -2,7 +2,7 @@
   <ion-page ref="page">
     <ion-header>
       <ion-toolbar color="primary" mode="ios">
-        <ion-title>สมาชิก</ion-title>
+        <ion-title>Cabecera</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -11,7 +11,7 @@
           <ion-col size="12" size-lg="6">
             <ion-list>
               <ion-list-header>
-                <ion-title>รายชื่อสมาชิก</ion-title>
+                <ion-title>Titulo de la cabecera</ion-title>
               </ion-list-header>
               <ion-item-sliding v-for="data in a" :key="data">
                 <ion-item>
@@ -41,7 +41,7 @@
     >
       <ion-header>
         <ion-toolbar>
-          <ion-title>เพิ่มข้อมูลสมาชิก</ion-title>
+          <ion-title>título barra</ion-title>
           <ion-buttons slot="end">
             <ion-button @click="dismiss">
               <ion-icon :icon="close"></ion-icon
@@ -83,7 +83,7 @@ import {
 import { close, personAdd } from "ionicons/icons";
 import { ref } from "vue";
 
-const a: string[] = ["นาย กรกมล ศรีอ่อน", "นาย พรี่บิ๊ก จ้า", "นาย ใครหว่า"];
+const a: string[] = ["Pepito", "Juanito", "Manolito"];
 const page = ref(IonPage);
 const modal = ref(IonModal);
 

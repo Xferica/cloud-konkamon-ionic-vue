@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar color="primary" mode="ios">
-        <ion-title>หน้าหลัก</ion-title>
+        <ion-title>Título de la web</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -12,12 +12,12 @@
             <ion-card>
               <img alt="Silhouette of mountains" src="/me-rmutsv-square.jpg" />
               <ion-card-header>
-                <ion-card-title>นาย กรกมล ศรีอ่อน</ion-card-title>
-                <ion-card-subtitle>บิ๊ก</ion-card-subtitle>
+                <ion-card-title>Título de la tarjeta</ion-card-title>
+                <ion-card-subtitle>subtítulo</ion-card-subtitle>
               </ion-card-header>
 
               <ion-card-content>
-                <p>นักศึกษา คณะวิทยาศาสตร์และเทคโนโลยี สาขาเทคโนโลยีสารสนเทศ</p>
+                <p>Este es un texto normal de un párrafo dentro del contenido de la tarjeta.</p>
               </ion-card-content>
             </ion-card>
           </ion-col>
