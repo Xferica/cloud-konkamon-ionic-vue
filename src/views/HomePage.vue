@@ -10,7 +10,7 @@
         <ion-row class="ion-justify-content-center">
           <ion-col size="12" size-lg="4">
             <ion-card>
-              <img alt="Silhouette of mountains" src="/me-rmutsv-square.jpg" />
+              <img alt="Silhouette of mountains" src="../../scitechBuilding.jpg" />
               <ion-card-header>
                 <ion-card-title>Título de la tarjeta</ion-card-title>
                 <ion-card-subtitle>subtítulo</ion-card-subtitle>

@@ -11,10 +11,13 @@
           <ion-icon aria-hidden="true" :icon="people" />
           <ion-label>Member</ion-label>
         </ion-tab-button>
-        <!-- <ion-tab-button tab="project" href="/tabs/project"> -->
-        <ion-tab-button tab="project" id="present-alert">
+        <ion-tab-button tab="project" href="/tabs/project">
           <ion-icon aria-hidden="true" :icon="document" />
           <ion-label>Project</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="v.modal" id="present-alert">
+          <ion-icon aria-hidden="true" :icon="chatbox"/>
+          <ion-label>V.Modal</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -22,12 +25,13 @@
   <ion-alert
     trigger="present-alert"
     header="Project"
-    message="Coming Soon..."
+    message="Un mensaje cualquiera de aviso"
     :buttons="['OK']"
   ></ion-alert>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import {
   IonTabBar,
   IonAlert,
@@ -37,6 +41,14 @@ import {
   IonIcon,
   IonPage,
   IonRouterOutlet,
+  IonicVue,
 } from "@ionic/vue";
-import { document, home, people } from "ionicons/icons";
+import { document, home, people, chatbox, camera } from "ionicons/icons";
+import { VueElement } from "vue";
+
+const texto = ref("");
+function cambiatexto() {
+  texto.value = "Este texto se ha añadido..."
+}
+
 </script>
