@@ -19,6 +19,10 @@
           <ion-icon aria-hidden="true" :icon="chatbox"/>
           <ion-label>V.Modal</ion-label>
         </ion-tab-button>
+        <ion-tab-button tab="Otro más" @click="cambiatexto">
+          <ion-icon :icon="camera" />
+          <ion-label>{{ texto }}</ion-label>
+        </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>
@@ -44,11 +48,10 @@ import {
   IonicVue,
 } from "@ionic/vue";
 import { document, home, people, chatbox, camera } from "ionicons/icons";
-import { VueElement } from "vue";
 
-const texto = ref("");
+const texto = ref("bot"); 
 function cambiatexto() {
-  texto.value = "Este texto se ha añadido..."
+  texto.value = "Mi Botón";
 }
 
 </script>
